@@ -1,7 +1,7 @@
 {
-  "name": "mentorship-importance",
+  "name": "git-talk",
   "version": "0.0.0",
-  "description": "The Importance of Mentorship",
+  "description": "Git: It's a Trap!",
   "main": "js/reveal.js",
   "scripts": {
     "test": "grunt test",
@@ -11,7 +11,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jacobroufa/mentorship-importance.git"
+    "url": "git://github.com/jacobroufa/git-talk.git"
   },
   "engines": {
     "node": "~0.10.0"
