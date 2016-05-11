@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
 
-        <title>The Importance of Mentorship</title>
+        <title>Git: It's a Trap!</title>
 
-        <meta name="description" content="How mentorship has impacted my life and how everyone can participate!">
+        <meta name="description" content="Deep dive into fundamental Git concepts. Git it?">
         <meta name="author" content="Jacob M. Roufa">
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -36,233 +36,313 @@
         <div class="reveal">
 
             <div class="slides">
-                <section data-background="images/sponsors.jpg"></section>
-
-                <section>
-                    <h1>The Importance of Mentorship</h1>
+                <section data-background="images/ackbar.jpg">
+                    <h1>Git: It's a Trap!</h1>
+                    <br><br><br><br><br><br><br>
                     <p>
                         Jacob M. Roufa<br>
                         <a href="http://twitter.com/jroufa">@jroufa</a><br>
                     </p>
-
-                    <aside class="notes">
-                        Thank Chicago Code Camp organizers<br>
-                        thank Angela Dugan for Impostor Syndrome talk
-                    </aside>
                 </section>
 
                 <section data-background="images/profile.jpg">
                     <h2>Who am I?</h2>
-
-                    <aside class="notes">
-                        personal stuff
-                    </aside>
                 </section>
 
-                <section data-background="images/laptop-coffee.jpg">
-                    <h2>What do I do?</h2>
-                    <br>
-
-                    <img class="fragment logo" width="136" src="images/logos/sitepen.png">
-                    <svg class="fragment logo" xmlns="http://www.w3.org/2000/svg" width="136" height="28" class="app-nav-logo">
-                        <g fill="#6799ff" fill-rule="evenodd">
-                            <path d="M9 20h3V8H3V3h17V0H0v11h9v9z"></path>
-                            <path d="M17 8v17H9v3h11V11h8V0h-3v8h-8zm25 3.5V20h3v-8.5h3.5V9h-10v2.5H42zM66 9v11h3V9h-3zm-11 4V9h-3v11h3v-4.5h4V20h3V9h-3v4h-4zm45 7h3v-4h5v-2.4h-5v-2h5.5V9H100v11zm-20-4.5L76 9h-3v11h3v-6.5l4 6.5h3V9h-3v6.5zM130 9h-3v11h8.5v-2.5H130V9zM93.5 9L90 14V9h-3v11h3v-5l3.5 5H97l-4-5.5L97 9h-3.5zm24 11.5c3 0 5.5-2.5 5.5-5.5V9h-3v5.5c0 1.5-.5 3-2.5 3s-2.5-1.5-2.5-3V9h-3v6c0 3 2.5 5.5 5.5 5.5z"></path>
-                        </g>
-                    </svg>
-                    <img class="fragment logo" width="136" src="images/logos/webdevs.jpg">
-
+                <section>
+                    <img src="images/pm-commit.jpg">
                     <aside class="notes">
-                        SitePen<br>
-                        Thinkful<br>
-                        Rockford Web Devs
-                    </aside>
-                </section>
-
-                <section data-background="images/unique.jpg">
-                    <h2>Why does any of this matter?</h2>
-
-                    <aside class="notes">
-                        we're all uniquely qualified<br>
-                        talk about background<br>
-                        highschool -> food service -> burnout w/ life<br>
-                        the web/open source
+                        why are we all here?<br>
+                        sometimes git feels like this<br>
+                        talk about using Git on a team<br>
+                        solo<br>
+                        small team<br>
+                        large team
                     </aside>
                 </section>
 
                 <section>
-                    <h4>Mentoring is a process for the informal transmission of knowledge, social capital, and the psychosocial support perceived by the recipient as relevant</h4>
+                    <blockquote class="twitter-tweet" data-lang="en">
+                        <p lang="en" dir="ltr">
+                            <a href="https://twitter.com/jroufa">@jroufa</a> GITS FOR THE GIT GOD
+                        </p>
+                        &mdash; Appropriate Tributes (@godtributes) <a href="https://twitter.com/godtributes/status/730121370915487744">May 10, 2016</a>
+                    </blockquote>
+                    <aside class="notes">
+                        sometimes the universe sends you a sign
+                    </aside>
+                </section>
+
+                <section data-background="images/goats/1.jpg">
+                    <aside class="notes">Goat Break!</aside>
                 </section>
 
                 <section>
-                    <h2>Mentorship is about...</h2>
-                    <h2 class="fragment">Learning</h2>
-                    <h2 class="fragment">Teaching</h2>
+                    <section>
+                        <h2>CLI</h2>
+                        <aside class="notes">why is CLI important</aside>
+                    </section>
 
-                    <aside class="notes">
-                        maybe kind of obvious, but useful to qualify<br>
-                        happy coincidence: theme of the conference
-                    </aside>
+                    <section>
+                        <h3>did you know...</h3>
+                        <h3 class="fragment">rebase is basically a series of bash scripts?</h3>
+                        <br>
+                        <p class="fragment"><a href="https://github.com/git/git/blob/master/git-rebase.sh">https://github.com/git/git/blob/master/git-rebase.sh</a></p>
+                    </section>
+
+                    <section>
+                        <h3>auto-completion</h3>
+                        <br>
+                        <p><a href="https://github.com/git/git/blob/master/contrib/completion/git-completion.bash">https://github.com/git/git/blob/master/contrib/completion/git-completion.bash</a></p>
+                        <aside class="notes">
+                            everyone use this. seriously. it's the best<br>
+                            demo auto-completion on commands and options
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3>tig</h3>
+                        <br>
+                        <p><a href="http://jonas.nitro.dk/tig/">http://jonas.nitro.dk/tig/</a></p>
+                        <aside class="notes">browsable log</aside>
+                    </section>
+
+                    <section>
+                        <h3>hub</h3>
+                        <br>
+                        <p><a href="https://hub.github.com/">https://hub.github.com/</a></p>
+                        <aside class="notes">make github mo betta</aside>
+                    </section>
                 </section>
 
-                <section data-background="images/geraldine.jpg">
-                    <aside class="notes">
-                        goat break!
-                    </aside>
+                <section data-background="images/goats/2.jpg">
+                    <aside class="notes">Goat Break!</aside>
                 </section>
 
-                <section data-background="images/classroom.jpg">
-                    <h2>Learning</h2>
+                <section>
+                    <section>
+                        <h2>Basics</h2>
+                        <aside class="notes">show of hands for comfort level with Git</aside>
+                    </section>
 
-                    <aside class="notes">
-                        taught from a young age that learning is not necessarily academic<br>
-                        learning is a life-long pursuit
-                    </aside>
+                    <section>
+                        <h3><code>git status</code></h3>
+                        <aside class="notes">
+                            staging basically allows us to decouple what we want in the repository from what has
+                            actually changed in the filesystem<br>
+                            huge departure from other VCS
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3><code>git fetch</code></h3>
+                        <aside class="notes">
+                            can granularly get changes from remote
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3><code>git add</code></h3>
+
+                        <h4 class="fragment"><code>git add .</code></h4>
+                        <h4 class="fragment"><code>git add -u</code></h4>
+                        <h4 class="fragment"><code>git add -p</code></h4>
+                        <aside class="notes">
+                            explain each facet and use case<br>
+                            . for all<br>
+                            -u for changed<br>
+                            -p for patch
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3><code>git commit</code></h3>
+                        <p class="fragment">should I use <code>-m</code>?</p>
+                        <p class="fragment"><a href="http://chris.beams.io/posts/git-commit/">How to Write a Git Commit Message</a></p>
+                        <aside class="notes">
+                            importance of good commit messages<br>
+                            don't be afraid of default editor (vim)
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3><code>git push</code></h3>
+                        <p class="fragment">show of hands:</p>
+                        <p class="fragment">
+                            how many just <code>git push origin master</code> without thinking?
+                        </p>
+                        <div class="fragment">
+                            <blockquote class="twitter-tweet" data-lang="en">
+                                <p lang="en" dir="ltr">
+                                    Thought of <a href="https://twitter.com/jroufa">@jroufa</a> when I saw this. <a href="https://t.co/HRJvHzsDDC">https://t.co/HRJvHzsDDC</a>
+                                </p>
+                                &mdash; Kelly Andrews (@kellyjandrews) <a href="https://twitter.com/kellyjandrews/status/730153380312719360">May 10, 2016</a>
+                            </blockquote>
+                        </div>
+                        <aside class="notes">
+                            explain remotes<br>
+                            talk about dangers of force push
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3><code>git branch</code></h3>
+                        <h4 class="fragment"><code>git branch -a</code></h4>
+                        <h4 class="fragment"><code>git branch myNewBranch [remote/myTrackingBranch]</code></h4>
+                        <h4 class="fragment"><code>git checkout -b myNewBranch</code></h4>
+                        <aside class="notes">
+                            branch lists<br>
+                            branch -a lists remote branches too!
+                            checkout -b makes new branch
+                        </aside>
+                    </section>
                 </section>
 
-                <section data-background="images/lightbulb.jpg">
-                    <h3>Learning is forever</h3>
-
-                    <aside class="notes">
-                        every day we learn something<br>
-                        today on Twitter learned that Hutt is a species not a family name
-                    </aside>
-                </section>
-
-                <section data-background="images/so-googling.png">
-                    <h3>Career requisite</h3>
-
-                    <aside class="notes">
-                        what do we do as developers?<br>
-                        stackoverflow<br>
-                        google<br>
-                        api docs<br>
-                        code review
-                    </aside>
-                </section>
-
-                <section data-background="">
-                    <h3>Finding guidance</h3>
-                    <br>
-                    <h4 class="fragment">Family</h4>
-                    <br>
-                    <h4 class="fragment">Friends</h4>
-                    <br>
-                    <h4 class="fragment">Colleagues & Peers</h4>
-
-                    <aside class="notes">
-                        we find guidance in all areas of our lives<br>
-                        pros and cons for each one
-                    </aside>
-                </section>
-
-                <section data-background="images/pair-programming.jpg">
-                    <h3>Work-provided opportunities</h3>
-
-                    <aside class="notes">
-                        informal opportunities<br>
-                        talk about SitePen
-                    </aside>
-                </section>
-
-                <section data-background="images/help.jpg">
-                    <h3>Asking for help</h3>
-
-                    <aside class="notes">
-                        whenever you need it<br>
-                        asking, finding humility, is important for growth
-                    </aside>
-                </section>
-
-                <section data-background="images/stuck.jpg">
-                    <h3>Stuck in limbo</h3>
-
-                    <aside class="notes">
-                        expert beginner<br>
-                        Dreyfus model<br>
-                        novice -- advanced beginner {{ expert beginner }} competent -- proficient -- expert<br>
-                        Dunning Kruger Effect
-                    </aside>
-                </section>
-
-                <section data-background="images/goats.jpg">
-                    <aside class="notes">
-                        goat break!
-                    </aside>
-                </section>
-
-                <section data-background="images/teaching.jpg">
-                    <h2>Teaching</h2>
-
-                    <aside class="notes"></aside>
-                </section>
-
-                <section data-background="images/no-idea.jpg">
-                    <h3>Here's a secret...</h3>
-                    <h4 class="fragment">I have no clue what I'm doing</h4>
-
-                    <aside class="notes"></aside>
-                </section>
-
-                <section data-background="">
-                    <h3>Know something? Teach something!</h3>
-
-                    <aside class="notes">
-                        if you pay attention to one thing, pay attention to this
-                    </aside>
-                </section>
-
-                <section data-background="images/speed-limit.jpg">
-                    <h3>Know your limits</h3>
-
-                    <aside class="notes">what about all the expert beginner stuff?</aside>
-                </section>
-
-                <section data-background="">
-                    <h3>Several years ago...</h3>
-
-                    <aside class="notes">
-                        talk about experience<br>
-                        not overwhelming, cathartic!
-                    </aside>
-                </section>
-
-                <section data-background="images/meetup.jpg">
-                    <h3>Meetups!!!!!!!</h3>
-
-                    <aside class="notes"></aside>
+                <section data-background="images/goats/3.jpg">
+                    <aside class="notes">Goat Break!</aside>
                 </section>
 
                 <section data-background="">
-                    <h3>Formal mentorship</h3>
+                    <section data-background="">
+                        <h2>Reset</h2>
+                        <aside class="notes"></aside>
+                    </section>
 
-                    <aside class="notes"></aside>
+                    <section>
+                        <h3><code>git reset</code></h3>
+                        <aside class="notes">
+                            git reset unstages changes<br>
+                            git reset --hard HEAD will throw away changes
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3><code>HEAD</code>?</h3>
+                        <p class="fragment">
+                            <a href="http://www.gitguys.com/topics/head-where-are-we-where-were-we/">HEAD: Where are we? Where were we?</a>
+                        </p>
+                        <aside class="notes">
+                            talk about refs
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3><code>^</code> and <code>~</code></h3>
+                        <p class="fragment">
+                            <a href="http://www.gitguys.com/topics/head-where-are-we-where-were-we/">HEAD: Where are we? Where were we?</a>
+                        </p>
+                        <aside class="notes">
+                            explain ~ and ^
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3><code>git checkout [ref] -- path/to/file.ext</code></h3>
+                        <aside class="notes">easy granular reset</aside>
+                    </section>
+
+                    <section>
+                        <h3><code>git revert [ref]</code></h3>
+                        <aside class="notes">
+                            apply opposite of changes<br>
+                            clear up confusion of SET of changes. specific to a commit<br>
+                            better to use checkout -- if you want changes to a specific file
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3><code>git stash</code></h3><br>
+                        <h4 class="fragment"><code>git stash list</code></h4>
+                        <h4 class="fragment"><code>git stash apply</code>&nbsp;&nbsp; vs &nbsp;&nbsp;<code>git stash pop</code></h4>
+                        <h4 class="fragment">what is this <code>stash@{0}</code> thing?</h4>
+                        <aside class="notes">
+                            explain and demonstrate stash
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3><code>git diff</code></h3><br>
+                        <h4 class="fragment"><code>git diff [commit]</code></h4>
+                        <h4 class="fragment"><code>git diff [commit]..[commit]</code></h4>
+                        <aside class="notes">
+                            shows difference between UNSTAGED files and HEAD
+                            explain and demonstrate diff
+                        </aside>
+                    </section>
                 </section>
 
-                <section data-background="">
-                    <h3>Lessons learned</h3>
-
-                    <aside class="notes"></aside>
+                <section data-background="images/goats/4.jpg">
+                    <aside class="notes">Goat Break!</aside>
                 </section>
 
-                <section data-background="">
+                <section>
+                    <section>
+                        <h2>Advanced Git</h2>
+                        <aside class="notes">big topic, let's have another goat break</aside>
+                    </section>
+
+                    <section data-background="images/goats/5.jpg">
+                        <aside class="notes">Goat Break!</aside>
+                    </section>
+
+                    <section>
+                        <h3>Trees</h3>
+                        <h4 class="fragment"><code>git log --graph --pretty=oneline --abbrev-commit</code></h4>
+                        <h4 class="fragment">or just use <code>tig</code></h4>
+                    </section>
+
+                    <section data-background="images/tree.png">
+                        <aside class="notes">what we don't want...</aside>
+                    </section>
+
+                    <section>
+                        <h3><code>git merge [ref]</code></h3>
+                        <aside class="notes">explain what a merge commit does</aside>
+                    </section>
+
+                    <section data-background="images/goats/6.jpg">
+                        <aside class="notes">Goat Break!</aside>
+                    </section>
+
+                    <section>
+                        <h3><code>git rebase [ref]</code></h3>
+                        <aside class="notes">explain linear history</aside>
+                    </section>
+
+                    <section>
+                        <h3><code>git cherry-pick [ref]</code></h3>
+                        <aside class="notes">like git revert but for ANYWHERE!</aside>
+                    </section>
+
+                    <section>
+                        <h3><code>git rebase -i [ref]</code></h3>
+                        <h3 class="fragment">aka "squash"</h3>
+                        <aside class="notes">explain squash commits</aside>
+                    </section>
+                </section>
+
+                <section data-background="images/goats/7.jpg">
+                    <aside class="notes">Goat Break!</aside>
+                </section>
+
+                <section>
                     <h2>Thank you!</h2>
                 </section>
 
-                <section data-background="">
-                    <h5>Attribution</h5>
+                <section>
+                    <h2>Attribution</h2>
 
                     <ul>
-                        <li>Some photos by <a href="https://twitter.com/caitpenn">@caitpenn</a></li>
-                        <li><a href="http://www.daedtech.com/how-developers-stop-learning-rise-of-the-expert-beginner/">How Developers Stop Learning: Rise of the Expert Beginner</a></li>
+                        <li>All goat images licensed for noncommercial reuse.</li>
+                        <li><a href="http://www.commitstrip.com/en/2016/05/09/when-the-pm-fixes-a-bug/">When the PM fixes a bug -- CommitStrip</a></li>
+                        <li><a href="https://git-scm.com/doc">git-scm documentation</a></li>
                     </ul>
-
-                    <aside class="notes"></aside>
                 </section>
             </div>
 
         </div>
 
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         <script src="lib/js/head.min.js"></script>
         <script src="js/reveal.js"></script>
     
